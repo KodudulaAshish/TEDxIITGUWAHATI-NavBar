@@ -14,30 +14,37 @@
   <body>
 
 
-    <nav id="primary">
-      <img id="logo" src="./Images/TEDx logo.png" alt="TEDx logo">
-      <div id="list">
-          <a href=# class="tabs">HOME</a>
-          <a href=# class="tabs">TALKS</a>
-          <a href=# class="tabs">BLOGS</a>
-          <a href=# class="tabs">ABOUT US</a>
-          <a href=# class="tabs">CONTACT US</a>
-          <img src="./Images/toggleMenuIcon-white.jpg" alt="MENU" width="50px" id="toggleMenu">
-      </div>
+  <!-- navBar -->
+  <nav id="primary">
+    <img id="logo" src="./Images/TEDx logo.png" alt="TEDx logo">
+    <div id="list">
+      <a href=# class="tabs">HOME</a>
+      <a href=# class="tabs" onclick="myFunction()">TALKS</a>
+        <div class="dropDownMenu close" id="myDropdown">
+            <a hef=# id="dropDownTabs">TEDxIITGuwahati</a>
+            <a hef=# id="dropDownTabs">TEDxIITGuwahatiStudio</a>
+        </div>
+      <a href=# class="tabs">ABOUT US</a>
+      <a href=# class="tabs active">CONTACT US</a>
+      <img src="./Images/toggleMenuIcon-white.jpg" alt="MENU" width="50px" id="toggleMenu">
+    </div>
   </nav>
   <div id="leftContainer" class="close">
-      <nav id="leftNav">
-          <img src="./Images/b_cross.svg" width="20px" id="closeMenu">
-          <a href=# class="leftTabs">HOME</a>
-          <a href=# class="leftTabs">TALKS</a>
-          <a href=# class="leftTabs">BLOGS</a>
-          <a href=# class="leftTabs">ABOUT US</a>
-          <a href=# class="leftTabs">CONTACT US</a>
-      </nav>
+    <nav id="leftNav">
+      <img src="./Images/b_cross.svg" width="20px" id="closeMenu">
+      <a href=# class="leftTabs">HOME</a>
+      <a href=# class="leftTabs" onclick="myFunctionleft()" id="myDropdownleft">TALKS</a>
+      <div class="leftdropDownMenu" id="myDropdown">
+        <a hef=# id="leftdropDownTabs">TEDxIITGuwahati</a>
+        <a hef=# id="leftdropDownTabs">TEDxIITGuwahatiStudio</a>
+      </div>
+      <a href=# class="leftTabs">ABOUT US</a>
+      <a href=# class="leftTabs">CONTACT US</a>
+    </nav>
   </div>
 
 
-    <section>
+  <section>
       <div class="row">
         <!-- BOX 1 -->
         <div class="col-sm-12 col-lg-6 col-md-6 box" style="background-color:black">
@@ -48,14 +55,14 @@
           <br>
           <!--icon -->  
           <div class="icon">
-            <a href="https://www.facebook.com/TEDxIITGuwahati/"><img src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667643535/Facebook_ioggph.svg" alt="facebook"
+            <a href="https://www.facebook.com/TEDxIITGuwahati/"><img id="icons"  src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667643535/Facebook_ioggph.svg" alt="facebook"
               width="40px"></a>
-            <a href="https://www.instagram.com/tedxiitguwahati/"><img src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667643535/Instagram_cjb2le.svg" alt="instagram"
+            <a href="https://www.instagram.com/tedxiitguwahati/"><img id="icons"  src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667643535/Instagram_cjb2le.svg" alt="instagram"
                     width="40px"></a>
-            <a href="https://twitter.com/tedxiitg"><img src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667643537/Twitter_vgkazq.svg" alt="twitter" width="40px"></a>
-            <a href="https://www.linkedin.com/company/tedx-iit-guwahati/"><img src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667643535/Linkedin_mymtth.svg"
+            <a href="https://twitter.com/tedxiitg"><img id="icons"  src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667643537/Twitter_vgkazq.svg" alt="twitter" width="40px"></a>
+            <a href="https://www.linkedin.com/company/tedx-iit-guwahati/"><img id="icons"  src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667643535/Linkedin_mymtth.svg"
                     alt="linkdin" width="40px"></a>
-            <a href="https://tedxiitguwahati.medium.com/"><img src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667643535/Medium_uy1xu2.svg" class="ted" alt="medium" width="40px"></a>
+            <a href="https://tedxiitguwahati.medium.com/"><img  id="icons" src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667643535/Medium_uy1xu2.svg" class="ted" alt="medium" width="40px"></a>
           </div> 
           <!--Phone-->
           <span class="cred">
@@ -93,6 +100,54 @@
       </div>
   </section>
 
+  <!-- footer code starts here -->
+  <div class="footer_mainbox">
+    <div><hr></div>
+    
+    <div class="footer_box">
+        <div  class="tedex_logo footer_sub_boxes" id="sub_box1"><img src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667908600/ted_nauf8g.png" alt="ted_image" id="ted_image" ></div>
+  
+  
+        <div class="footer_sub_boxes" id="sub_box2">
+            <div class="headings_top"> <b>TEDxIITGuwahati </b> </div>
+            <div class="links">Home</div>
+            <div class="links">Talks</div>
+            <div class="links">About Us</div>
+            <div class="links">Contact Us</div>
+        </div>
+  
+  
+  
+        <div class="footer_sub_boxes" id="sub_box3">
+            <div class="headings_top"> <b> Events</b></div>
+            <div class="links">TEDxIITGuwahati</div>
+            <div class="links"> TEDxIITGuwahati Studio</div>
+        </div>
+  
+  
+        <div class="footer_sub_boxes" id="sub_box4">
+            <div class="headings_top" id="follow_us"> <b> Follow Us</b></div>
+            <div class=" links3">Facebook</div>
+            <div class=" links3">Instagram</div>
+            <div class=" links3">LinkedIn</div>
+            <div class=" links3">Twitter</div>
+            <div class=" links3">Medium</div>
+        </div>
+    </div>
+    <div><hr ></div>
+    
+  
+    <div>
+        <div class="headings_bottom"> <b> Ideas Worth Spreading  </b></div>
+        <div class="footer_foot">
+        <div class="foot_text" id="license_text">This independent TEDx is operated under license from TED.</div>
+        <div class="foot_text" id="copyright_text">© 2019-2022 TEDxIITGuwahati. All rights reserved</div>
+    </div>
+    </div>
+  
+  
+  </div>
+  <!-- footer code ends here -->
   
 
 
@@ -117,17 +172,25 @@
 
     <script>
       const toggleMenu = document.getElementById('toggleMenu');
-      toggleMenu.addEventListener('click', changeMenu);
+    toggleMenu.addEventListener('click', changeMenu);
 
-      const clossMenu = document.getElementById('closeMenu');
-      clossMenu.addEventListener('click', changeMenu);
+    const clossMenu = document.getElementById('closeMenu');
+    clossMenu.addEventListener('click', changeMenu);
+
+    const talksbutton = document.getElementById('talksbutton');
+    talksbutton.addEventListener('click', openMenu)
 
 
-      function changeMenu()
-      {
-          const leftMenu = document.getElementById('leftContainer');
-          leftMenu.classList.toggle('close');
-      }
+    function changeMenu()
+    {
+      const leftMenu = document.getElementById('leftContainer');
+      leftMenu.classList.toggle('close');
+    } 
+
+    function myFunction() 
+    {
+      document.getElementById("myDropdown").classList.toggle("close");
+    }
 
     </script>
 
