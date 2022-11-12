@@ -238,7 +238,14 @@ h1{
     margin: 13px ;
     transition: all 0.2s ease-in-out;
     letter-spacing: 0.05rem;
+    color: white;
 }
+
+#dropDownTabs:hover
+{
+    text-decoration: none;
+}
+
 
 .leftdropDownMenu
 {
